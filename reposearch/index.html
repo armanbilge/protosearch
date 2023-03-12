@@ -8,9 +8,24 @@
 </head>
 
 <body>
-  <h1 class="title">Repo Search</h1>
-  <h2 class="subtitle">Try "fs2" or "cats-effect"</h2>
-  <!-- Include Scala.js compiled code -->
+  <section class="section">
+    <h1 class="title">Demo: Repo Search</h1>
+    <p class="subtitle">
+      This search indexes metadata on GitHub repos from typelevel, http4s, circe, davenverse, and typelevel affiliate projects.
+      Each repo has the following fields indexed: name, fullName, description, topics.
+      To query a field, prefix your query with the field name, e.g. <code>name:cats</code>
+      The default field is the description.
+    </p>
+    <p class="subtitle">
+      Try some of these examples:
+    </p>
+    <p class="is-family-monospace">cats fs2 json</p>
+    <p class="is-family-monospace">(csv json) AND streaming</p>
+    <p class="is-family-monospace">parsing AND NOT (json OR jawn)</p>
+    <p class="is-family-monospace">fullName:[c TO e]</p>
+    <p class="is-family-monospace">topics:(fp functional-programming)</p>
+  </section>
+
   <div id="app"></div>
   <script type="text/javascript" src="index.js"></script>
 
